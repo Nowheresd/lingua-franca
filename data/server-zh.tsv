@@ -1,0 +1,240 @@
+# 服务器/插件文本补充词表（英文<TAB>中文<TAB>备注），后加载覆盖原版词表
+# 装备
+Sword	剑	装备
+Blade	刃	装备
+Dagger	匕首	装备
+Axe	斧	装备
+Bow	弓	装备
+Crossbow	弩	装备
+Staff	法杖	装备
+Wand	魔杖	装备
+Helmet	头盔	装备
+Chestplate	胸甲	装备
+Leggings	护腿	装备
+Boots	靴子	装备
+Shield	盾牌	装备
+Gloves	手套	装备
+Belt	腰带	装备
+Ring	戒指	装备
+Amulet	护符	装备
+Necklace	项链	装备
+Cloak	披风	装备
+Talisman	护符	装备
+Accessory	饰品	装备
+Artifact	神器	装备
+Armor	护甲	装备
+Weapon	武器	装备
+Pickaxe	镐	装备
+Shovel	锹	装备
+Hoe	锄	装备
+Fishing Rod	钓鱼竿	装备
+# 品质与稀有度
+Common	普通	品质
+Uncommon	罕见	品质
+Rare	稀有	品质
+Epic	史诗	品质
+Legendary	传说	品质
+Mythic	神话	品质
+Divine	神圣	品质
+Special	特殊	品质
+Unique	独特	品质
+Exclusive	专属	品质
+Limited	限定	品质
+Festive	节庆	品质
+# 材料与货币
+Platinum	铂金	材料
+Titanium	钛	材料
+Mithril	秘银	材料
+Adamantite	精金	材料
+Ruby	红宝石	材料
+Sapphire	蓝宝石	材料
+Topaz	黄玉	材料
+Jade	翡翠	材料
+Amethyst	紫水晶	材料
+Obsidian	黑曜石	材料
+Netherite	下界合金	材料
+Emerald	绿宝石	材料
+Diamond	钻石	材料
+Gold	金	材料
+Iron	铁	材料
+Copper	铜	材料
+Silver	银	材料
+Crystal	水晶	材料
+Dragon	龙	材料
+Shadow	暗影	材料
+Void	虚空	材料
+Celestial	天界	材料
+Frozen	冰封	材料
+Flame	烈焰	材料
+Storm	风暴	材料
+Ancient	远古	材料
+Golden	黄金	材料
+Skin	皮肤	外观
+Crate	补给箱	系统
+Bundle	礼包	系统
+Key	钥匙	系统
+Token	代币	货币
+Coin	金币	货币
+Gem	宝石	货币
+Soul	灵魂	货币
+Essence	精华	货币
+Fragment	碎片	材料
+Material	材料	材料
+Loot	战利品	系统
+Reward	奖励	系统
+Drop	掉落物	系统
+# 属性
+Health	生命值	属性
+Mana	法力值	属性
+Defense	防御力	属性
+Strength	力量	属性
+Agility	敏捷	属性
+Intelligence	智力	属性
+Vitality	体力	属性
+Ferocity	凶猛	属性
+Critical Chance	暴击率	属性
+Critical Damage	暴击伤害	属性
+Crit Chance	暴击率	属性
+Crit Damage	暴击伤害	属性
+Attack Damage	攻击伤害	属性
+Attack Speed	攻击速度	属性
+Ability Damage	技能伤害	属性
+Magic Find	魔法寻宝	属性
+Pet Luck	宠物运气	属性
+Sea Creature Chance	海怪几率	属性
+True Defense	真实防御	属性
+Health Regen	生命回复	属性
+Lifesteal	生命偷取	属性
+Bonus Attack Speed	额外攻击速度	属性
+Speed	速度	属性
+Damage	伤害	属性
+Range	范围	属性
+Cooldown	冷却	属性
+Duration	持续时间	属性
+Charges	充能	属性
+Level	等级	属性
+Tier	阶级	属性
+Progress	进度	属性
+Requires	需要	提示
+Cost	花费	提示
+Price	价格	提示
+Sell Price	售价	提示
+Buy Price	买价	提示
+# 界面与提示
+Enchant Slots	附魔槽位	界面
+Available Slot	可用槽位	界面
+Locked Slot	锁定槽位	界面
+Gemstone Slot	宝石槽位	界面
+Enchantment	附魔	界面
+Enchant	附魔	界面
+Reforge	重铸	界面
+Rune	符文	界面
+Ability	能力	界面
+Passive	被动	界面
+Set Bonus	套装加成	界面
+Full Set	全套效果	界面
+In main hand	在主手时	界面
+When held	手持时	界面
+When worn	穿戴时	界面
+On use	使用时	界面
+Click to	点击以	界面
+Right-click	右键点击	界面
+Left-click	左键点击	界面
+Shift-click	按住 Shift 点击	界面
+Time Left	剩余时间	界面
+Expires in	剩余	界面
+Owner	所有者	界面
+Members	成员	界面
+Online	在线	界面
+Offline	离线	界面
+Crafting	合成	界面
+Recipe	配方	界面
+Collection	收藏	界面
+Skills	技能	界面
+Stats	属性	界面
+Profile	档案	界面
+Party	队伍	界面
+Guild	公会	界面
+Trade	交易	界面
+Auction House	拍卖行	界面
+Bazaar	集市	界面
+Shop	商店	界面
+Quest	任务	玩法
+Daily	每日	玩法
+Weekly	每周	玩法
+Dungeon	地牢	玩法
+Boss	首领	玩法
+Minion	仆从	玩法
+Pet	宠物	玩法
+Event	活动	玩法
+Season	赛季	玩法
+Rank	段位	玩法
+Score	分数	玩法
+Wave	波次	玩法
+Kills	击杀	玩法
+Deaths	死亡	玩法
+Assists	助攻	玩法
+Victory	胜利	玩法
+Defeat	失败	玩法
+Listings	拍卖列表	界面
+Seller	卖家	界面
+Price	价格	界面
+Left-click to buy	左键购买	界面
+Hold Shift	按住 Shift	界面
+view player auctions	查看玩家拍卖	界面
+Auction	拍卖	玩法
+Bid	竞价	玩法
+Buyout	一口价	玩法
+Sold	已售出	玩法
+Listed	已上架	玩法
+lol	哈哈	聊天
+lmao	笑死	聊天
+gg	打得好	聊天
+wp	打得好	聊天
+ty	谢谢	聊天
+thx	谢谢	聊天
+np	不客气	聊天
+brb	马上回来	聊天
+afk	暂离	聊天
+omw	在路上	聊天
+idk	不知道	聊天
+imo	我觉得	聊天
+tbh	说实话	聊天
+btw	顺便说	聊天
+nvm	算了	聊天
+oof	哎	聊天
+pog	太强了	聊天
+ez	轻松	聊天
+gl	好运	聊天
+hf	玩得开心	聊天
+sup	咋样	聊天
+rip	节哀	聊天
+completed:	完成：
+rewards:	奖励：
+completed	已完成
+rewards	奖励
+regions:	区域：	服务器
+catches:	渔获：	服务器
+fishing	钓鱼	服务器
+archaeology	考古学	服务器
+all	全部	服务器
+discovered	已发现	服务器
+undiscovered	未发现	服务器
+complete	完整	服务器
+general	通用	服务器
+illager	灾厄村民	服务器
+savanna	热带草原	服务器
+desert	沙漠	服务器
+arctic	极地	服务器
+boreal	寒带森林	服务器
+lush	繁茂	服务器
+arid	干旱	服务器
+ocean	海洋	服务器
+nether	下界	服务器
+badlands	恶地	服务器
+blighted	腐化	服务器
+deep dark	深暗之域	服务器
+tropical	热带	服务器
+- dr. diggy	— 迪基博士	服务器
+available for a limited time	限时供应	服务器
+only with	仅需	服务器

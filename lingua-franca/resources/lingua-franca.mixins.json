@@ -1,0 +1,35 @@
+{
+  "required": true,
+  "package": "com.linguafranca.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "ChatComponentMixin",
+    "ItemStackMixin",
+    "ContainerScreenMixin",
+    "ClientPacketListenerMixin",
+    "TextDisplayMixin",
+    "TextDisplayRendererMixin",
+    "TextDisplayPrefetchMixin",
+    "EntityNameMixin",
+    "GuiTextTermMixin",
+    "KeyOpenMixin",
+    "TabListMixin",
+    "TabHeaderRefreshMixin",
+    "TabPlayerNameMixin",
+    "ActionBarMixin",
+    "SidebarEntryFixMixin",
+    "ObjectiveMixin",
+    "BossBarMixin",
+    "AdvancementMixin",
+    "SignTextMixin",
+    "TooltipTextMixin",
+    "OverlayMessageMixin",
+    "WynnDialogueTextRendererMixin",
+    "WynnDialogueTextRendererAccessor",
+    "WynnDialogueTextDrawerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
