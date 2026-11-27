@@ -13,7 +13,7 @@ public final class LinguaConfig {
     public boolean enabled = true;
     public String apiKey = "";
     public String baseUrl = "https://api.deepseek.com";
-    public String model = "deepseek-flash";
+    public String model = "deepseek-chat";
     public boolean translateChat = true;
     public boolean translateTooltip = true;
     public boolean translateItemName = true;

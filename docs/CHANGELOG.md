@@ -1,5 +1,10 @@
 # 更新日志
 
+## v0.0.2 - 修复默认模型
+
+- 默认翻译模型改回 deepseek-chat：此前默认的 deepseek-flash 是思考模型，短文本翻译会消耗大量推理 token，甚至返回空内容，导致部分文本不翻译
+- 旧配置中写着 deepseek-flash 的用户会自动迁移回 deepseek-chat
+
 ## v0.0.1 — 公开测试版（Beta）
 
 首个公开测试版本。
