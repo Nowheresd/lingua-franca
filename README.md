@@ -1,4 +1,4 @@
-# Lingua Franca · 让服务器说中文
+# Lingua Franca · 实时翻译模组
 
 ![Lingua Franca](docs/brand/icon-512.png)
 
