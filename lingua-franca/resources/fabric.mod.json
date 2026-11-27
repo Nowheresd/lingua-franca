@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "lingua-franca",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "name": "Lingua Franca",
   "description": "公开测试版｜把服务器里的英文实时翻译成中文：聊天、物品与 Lore、浮空字、成就、木牌、计分板与 NPC 对话。支持本地缓存、分服词库与多车道请求调度。",
   "icon": "assets/lingua-franca/icon.png",

@@ -92,6 +92,28 @@ public final class DeepSeekBackend implements Backend {
         return map;
     }
 
+
+    /** deepseek-flash 默认是思考模型，翻译场景下关闭 reasoning，否则短文本会耗尽 token 返回空。 */
+    private java.util.Map<String, Object> basePayload(int maxTokens,
+                                                      java.util.List<java.util.Map<String, String>> messages) {
+        java.util.Map<String, Object> payload = new java.util.LinkedHashMap<>();
+        payload.put("model", config.model);
+        payload.put("temperature", 0);
+        payload.put("max_tokens", maxTokens);
+        if (disableThinking()) {
+            payload.put("thinking", java.util.Map.of("type", "disabled"));
+        }
+        payload.put("messages", messages);
+        return payload;
+    }
+
+    private boolean disableThinking() {
+        String model = config.model == null ? "" : config.model.toLowerCase(java.util.Locale.ROOT);
+        String base = config.baseUrl == null ? "" : config.baseUrl.toLowerCase(java.util.Locale.ROOT);
+        return base.contains("deepseek.com")
+                && (model.contains("flash") || model.contains("reason") || model.startsWith("deepseek-v4"));
+    }
+
     @Override
     public String translateToEnglish(String chinese) throws Exception {
         if (config.apiKey == null || config.apiKey.isBlank()) {
@@ -100,13 +122,9 @@ public final class DeepSeekBackend implements Backend {
         String system = String.join("\n",
                 "把玩家输入的中文翻译成地道、简短的游戏聊天英文。",
                 "只输出英文，不要解释、不要引号；保留玩家名、数字和 / 开头的命令。");
-        java.util.Map<String, Object> payload = java.util.Map.of(
-                "model", config.model,
-                "temperature", 0,
-                "max_tokens", 200,
-                "messages", java.util.List.of(
-                        java.util.Map.of("role", "system", "content", system),
-                        java.util.Map.of("role", "user", "content", chinese)));
+        java.util.Map<String, Object> payload = basePayload(200, java.util.List.of(
+                java.util.Map.of("role", "system", "content", system),
+                java.util.Map.of("role", "user", "content", chinese)));
         String body = new com.google.gson.Gson().toJson(payload);
         HttpRequest req = HttpRequest.newBuilder(URI.create(trimSlash(config.baseUrl) + "/chat/completions"))
                 .timeout(Duration.ofSeconds(20))
@@ -140,13 +158,9 @@ public final class DeepSeekBackend implements Backend {
                 "输入是一个 JSON 字符串数组，请把每个元素翻译成简体中文。",
                 "输出必须是同样长度、同样顺序的 JSON 字符串数组，不要输出任何解释或 Markdown 代码块。",
                 "保留数字、颜色代码（§a）、占位符（%s、{0}）。游戏术语用大陆通用译名。");
-        java.util.Map<String, Object> payload = java.util.Map.of(
-                "model", config.model,
-                "temperature", 0,
-                "max_tokens", 2400,
-                "messages", java.util.List.of(
-                        java.util.Map.of("role", "system", "content", system),
-                        java.util.Map.of("role", "user", "content", user)));
+        java.util.Map<String, Object> payload = basePayload(2400, java.util.List.of(
+                java.util.Map.of("role", "system", "content", system),
+                java.util.Map.of("role", "user", "content", user)));
         String body = new com.google.gson.Gson().toJson(payload);
         HttpRequest req = HttpRequest.newBuilder(URI.create(trimSlash(config.baseUrl) + "/chat/completions"))
                 .timeout(Duration.ofSeconds(40))
@@ -181,11 +195,7 @@ public final class DeepSeekBackend implements Backend {
     }
 
     private String buildBody(String english) {
-        Map<String, Object> payload = Map.of(
-                "model", config.model,
-                "temperature", 0,
-                "max_tokens", 800,
-                "messages", List.of(
+        Map<String, Object> payload = basePayload(800, List.of(
                         Map.of("role", "system", "content", SYSTEM),
                         Map.of("role", "user", "content", english)));
         return new com.google.gson.Gson().toJson(payload);

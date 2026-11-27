@@ -13,7 +13,7 @@ public final class LinguaConfig {
     public boolean enabled = true;
     public String apiKey = "";
     public String baseUrl = "https://api.deepseek.com";
-    public String model = "deepseek-chat";
+    public String model = "deepseek-flash";
     public boolean translateChat = true;
     public boolean translateTooltip = true;
     public boolean translateItemName = true;
@@ -87,7 +87,7 @@ public final class LinguaConfig {
                 cfg.baseUrl = "https://api.deepseek.com";
             }
             if (cfg.model == null || cfg.model.isBlank()) {
-                cfg.model = "deepseek-chat";
+                cfg.model = "deepseek-flash";
             }
             if (!Files.exists(path)) {
                 Files.createDirectories(path.getParent());

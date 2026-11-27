@@ -71,7 +71,7 @@ $CP = $cpItems -join ";"
 $src = "lingua-franca\src"
 $res = "lingua-franca\resources"
 $out = "lingua-franca\build\classes"
-$ver = "0.0.2"
+$ver = "0.0.3"
 
 Remove-Item -Recurse -Force "lingua-franca\build" -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force $out | Out-Null

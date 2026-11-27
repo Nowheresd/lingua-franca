@@ -28,7 +28,7 @@
 
 ### 说明
 - 纯客户端，无需服务器安装
-- 默认模型 deepseek-chat，可自定义服务地址与模型
+- 默认模型 deepseek-flash，可自定义服务地址与模型
 - 公开测试版，欢迎反馈问题
 
 ---
@@ -54,7 +54,7 @@ Install: Fabric Loader (26.3) + Fabric API, drop the jar into `mods`, press **J*
 
 Notes:
 - Client-side only
-- Default model: deepseek-chat; custom endpoints/models supported
+- Default model: deepseek-flash; custom endpoints/models supported
 - Public beta — feedback welcome
 
 ## 建议标签

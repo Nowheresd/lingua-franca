@@ -40,9 +40,9 @@ Lingua Franca 把服务器里的英文**实时翻译成中文**：聊天、物�
 3. 启动游戏，按 **J** 打开设置，填入翻译服务 **API Key**；
 4. 进服务器即可生效。
 
-> 模组本身不附带 API Key。默认使用 DeepSeek（`https://api.deepseek.com`，模型 `deepseek-chat`），也可以换成任何兼容 OpenAI Chat Completions 格式的服务。
+> 模组本身不附带 API Key。默认使用 DeepSeek（`https://api.deepseek.com`，模型 `deepseek-flash`），也可以换成任何兼容 OpenAI Chat Completions 格式的服务。
 >
-> 提示：deepseek-flash 属于思考模型，短文本翻译会消耗大量推理 token，可能变慢甚至返回空；翻译场景推荐 deepseek-chat。
+> 提示：deepseek-flash 属于思考模型，模组会在翻译请求中自动关闭思考模式（thinking disabled），既保留 flash 模型又保证速度；如使用自定义服务则不会附加该参数。
 
 ## 配置
 
@@ -52,7 +52,7 @@ Lingua Franca 把服务器里的英文**实时翻译成中文**：聊天、物�
 |---|---|---|
 | `enabled` | true | 总开关 |
 | `apiKey` | 空 | 翻译服务 Key（必填） |
-| `baseUrl` / `model` | DeepSeek / `deepseek-chat` | 服务地址与模型 |
+| `baseUrl` / `model` | DeepSeek / `deepseek-flash` | 服务地址与模型 |
 | `translateChat` | true | 聊天翻译 |
 | `translateTooltip` | true | 悬停提示翻译 |
 | `translateItemName` / `translateItemLore` | true | 物品名 / 描述翻译 |
@@ -139,7 +139,7 @@ dist/                     构建产物
 3. Launch the game, press **J**, and enter your **API key**;
 4. Join a server — translations start immediately.
 
-> You need your own API key. The default backend is DeepSeek (`https://api.deepseek.com`, model `deepseek-chat`); any OpenAI-compatible endpoint works.
+> You need your own API key. The default backend is DeepSeek (`https://api.deepseek.com`, model `deepseek-flash`); any OpenAI-compatible endpoint works.
 
 ## Configuration
 

@@ -30,7 +30,7 @@ Or edit `config/lingua-franca.json`:
   "enabled": true,
   "apiKey": "your-key",
   "baseUrl": "https://api.deepseek.com",
-  "model": "deepseek-chat",
+  "model": "deepseek-flash",
   "translateChat": true,
   "translateTooltip": true,
   "translateItemName": true,

@@ -1,5 +1,11 @@
 # 更新日志
 
+## v0.0.3 - 默认使用 deepseek-flash 并关闭思考模式
+
+- 默认模型改回 deepseek-flash，满足需要 flash 的场景
+- 对 deepseek-flash 自动附加 thinking disabled：关闭推理过程，短文本翻译恢复秒回（实测 0.6s，仅 3 个输出 token）
+- 自定义服务地址不会附加该参数，兼容其它 OpenAI 格式服务
+
 ## v0.0.2 - 修复默认模型
 
 - 默认翻译模型改回 deepseek-chat：此前默认的 deepseek-flash 是思考模型，短文本翻译会消耗大量推理 token，甚至返回空内容，导致部分文本不翻译
